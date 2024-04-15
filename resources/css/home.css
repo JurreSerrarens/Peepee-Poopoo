@@ -1,0 +1,26 @@
+@font-face {
+    font-family: CeraPro;
+    src: url('../font/CeraPro-Black.ttf');
+}
+@font-face {
+    font-family: CeraProLight;
+    src: url('../font/CeraPro-Medium.ttf');
+}
+
+body{
+    font-family: CeraPro;
+}
+
+p{
+    font-family: CeraProLight;     
+}
+
+hr{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.title{
+    margin: 0 auto;
+    width: fit-content;
+}

@@ -1,0 +1,38 @@
+@media (max-width: 852px) {
+    .attractieContainer
+    {
+        display: flex;
+        width: 85%;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 853px) {
+    .attractieContainer
+    {
+        display: flex;
+        width: 85%;
+        height: fit-content;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.subContainer
+{
+    margin: 15px 0;
+    border: 3px black solid;
+    width: 301px;
+    height: 500px;
+    border-collapse: collapse;
+}
+.subContainer h2
+{
+    border-bottom: 2px solid black;
+}
+.image
+{
+    width: 295px;
+    height: 295px;
+}

@@ -1,0 +1,13 @@
+.formCont
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.formCont h2
+{
+    margin: 0;
+}
+.formCont *{
+    margin: 0 0 0 15px;
+}

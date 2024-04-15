@@ -1,0 +1,28 @@
+@extends('layout')
+
+@section('css')
+    <link href="{{ asset('../resources/css/home.css') }}" rel="stylesheet">
+    <link
+      rel="icon"
+      href="https://media.tenor.com/j6HNDMU_fF4AAAAM/cow-dancing.gif"
+    />
+@endsection
+
+@section("title")
+    U did it gamer
+@endsection
+
+@section("content")
+    <h1 class="title">Tickets</h1>
+    <hr>
+    <!-- Introduction -->
+    @foreach($tickets as $ticket)
+        <div class="subContainer">
+            <h2>{{ $ticket->name }}</h2>
+            <p>{{ $ticket->price }}</p>
+            <a href="http://localhost/LegoLandDoetinchem/public/order">Koop nu!</a>
+        </div>
+    @endforeach
+    
+    
+@endsection

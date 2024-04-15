@@ -1,0 +1,12 @@
+.ticketForm{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.formCont
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 50px;
+}

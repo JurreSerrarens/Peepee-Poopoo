@@ -1,0 +1,107 @@
+/*Base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../images/Crust.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+}
+.alert{
+    color: red;
+    font-size: 10px;
+}
+
+/*Menu*/
+.menuBar
+{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+    background: #ffcf00;
+
+    border-bottom: 8px solid #006db7;
+    border-collapse: collapse;
+}
+.menuContainer
+{
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+}
+
+.menuImage
+{
+    height: 90%;
+    margin-bottom: 10px;
+}
+
+.menuItem
+{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 150px;
+    height: 40%;
+}
+.menuItem:hover
+{
+    color: white;
+    border-bottom: 8px solid rgb(0, 0, 0)
+}
+
+/*Containers*/
+.mainContainer
+{
+    background-color: whitesmoke;
+    width: 85%;
+    min-height: 720px;
+    height: fit-content;
+    margin: 80px auto 0;
+    padding-top: 50px;
+
+    border-collapse: collapse;
+    border-left: 8px solid rgb(132, 132, 132);
+    border-right: 8px solid rgb(132, 132, 132);
+
+    /*background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2F4f41d96967694aae9f7585e7efd1e8ca%2Ff40442872ae8b83c-37%2Fs400x600%2F78b368813035750a0ac48840aec0a9aafbd00581.gifv&f=1&nofb=1&ipt=a155bc76a66686e6fec1646bb2465d4d6634585c34f3a9b42ccf013123ef5960&ipo=images");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+
+}
+.mainContainer *
+{
+    margin: 0 auto;
+}
+.mainContainer hr
+{
+    margin: 8px auto 14px;
+}
+.subContainer{
+    margin: 35px 75px 0 75px;
+    height: fit-content;
+    width: fit-content
+}
+
+/*Footer*/
+.footer
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 125px;
+    background: rgb(196, 196, 196);
+
+    border-top: 8px solid rgb(0, 27, 125);
+    border-collapse: collapse;
+}
