@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="{{ asset('../resources/css/layout.css') }}" rel="stylesheet">
+    @vite(['resources/css/layout.css', 'resources/js/app.js'])
     @yield('css')
 
     <title>App Name - @yield('title')</title>

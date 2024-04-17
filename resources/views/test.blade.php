@@ -2,6 +2,7 @@
 
 @section('css')
     <link href="{{ asset('../resources/css/test.css') }}" rel="stylesheet">
+        @vite(['resources/css/test.css', 'resources/js/app.js'])
     <link
       rel="icon"
       href="https://media.tenor.com/j6HNDMU_fF4AAAAM/cow-dancing.gif"
