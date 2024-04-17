@@ -20,7 +20,7 @@
         <div class="subContainer">
             <h2>{{ $ticket->name }}</h2>
             <p>{{ $ticket->price }}</p>
-            <a href="http://localhost/LegoLandDoetinchem/public/order">Koop nu!</a>
+            <a href="{{url('order')}}">Koop nu!</a>
         </div>
     @endforeach
     

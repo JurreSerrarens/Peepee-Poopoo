@@ -16,13 +16,13 @@
     <!-- Header Menu -->
     <div class="menuBar">
         <div class="menuContainer">
-            <a class="menuItem" href="http://localhost/LegoLandDoetinchem/public/attracties">Attracties</a>
-            <a class="menuItem" href="http://localhost/LegoLandDoetinchem/public/tijden">Openings Tijden</a>
-            <a class="menuImage" href="http://localhost/LegoLandDoetinchem/public/home">
+            <a class="menuItem" href="{{url('attracties')}}">Attracties</a>
+            <a class="menuItem" href="{{url('tijden')}}">Openings Tijden</a>
+            <a class="menuImage" href="{{url('home')}}">
                 <img class="menuImage" src="{{ asset('../resources/images/LEGOLAND_PARKS_LOGO.svg') }}" >
             </a>
-            <a class="menuItem" href="http://localhost/LegoLandDoetinchem/public/tickets">Tickets</a>
-            <a class="menuItem" href="http://localhost/LegoLandDoetinchem/public/contact">Contact</a>
+            <a class="menuItem" href="{{url('tickets')}}">Tickets</a>
+            <a class="menuItem" href="{{url('contact')}}">Contact</a>
         </div>
     </div>
 
