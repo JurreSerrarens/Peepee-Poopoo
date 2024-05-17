@@ -73,7 +73,7 @@ body{
     border-left: 8px solid rgb(132, 132, 132);
     border-right: 8px solid rgb(132, 132, 132);
 
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2F4f41d96967694aae9f7585e7efd1e8ca%2Ff40442872ae8b83c-37%2Fs400x600%2F78b368813035750a0ac48840aec0a9aafbd00581.gifv&f=1&nofb=1&ipt=a155bc76a66686e6fec1646bb2465d4d6634585c34f3a9b42ccf013123ef5960&ipo=images");
+    /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2F4f41d96967694aae9f7585e7efd1e8ca%2Ff40442872ae8b83c-37%2Fs400x600%2F78b368813035750a0ac48840aec0a9aafbd00581.gifv&f=1&nofb=1&ipt=a155bc76a66686e6fec1646bb2465d4d6634585c34f3a9b42ccf013123ef5960&ipo=images"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;

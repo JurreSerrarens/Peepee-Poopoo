@@ -30,6 +30,13 @@ class HomeController extends Controller
         return View('attracties');
     }
     /**
+     * Display attraction details page.
+     */
+    public function attractieDetail()
+    {
+        return View('attractieDetail');
+    }
+    /**
      * Display openingtime page.
      */
     public function tijden()
