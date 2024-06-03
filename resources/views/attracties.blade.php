@@ -25,8 +25,8 @@
             <h2>{{ $attractie->name }}</h2>
             <h3>{{ $attractie->type}}</h3>
             <p> {{ $attractie->description}}</p>
+            <td><a href="attractie/{{ $attractie->id }}" class="btn btn-info">View</a></td>
         </div>
         @endforeach
-        <td><a href="{{ url('attractieDetail', $attracties) }}" class="btn btn-info">View</a></td>
     </div>
 @endsection

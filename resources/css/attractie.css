@@ -26,6 +26,11 @@
     width: 301px;
     height: 500px;
     border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .subContainer h2
 {

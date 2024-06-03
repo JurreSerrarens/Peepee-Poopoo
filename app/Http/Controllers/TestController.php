@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\test;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
-use App\Http\Controllers\TestController;
  
 // Route::get('/test', [TestController::class, 'show']);
 

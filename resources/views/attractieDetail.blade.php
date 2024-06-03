@@ -15,8 +15,9 @@
 @endsection
 
 @section("content")
-<div class="attractieDetail">
-    <img src="" alt="attractie image" class="image">
-    <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eum adipisci qui officiis deserunt nemo expedita, sunt doloremque aliquid laborum, quas inventore consequatur illo quis reiciendis optio voluptate exercitationem pariatur!</div>
-</div>
+        <div class="attractieDetail">
+                <img class="image"alt="attractie image"  src="{{$attractie->image}}">
+                <h2>{{ $attractie->name }}</h2>
+                <div class="info"><p> {{ $attractie->description}}</p></div>
+        </div>
 @endsection

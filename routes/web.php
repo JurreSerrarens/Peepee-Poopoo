@@ -29,7 +29,7 @@ Route::get('/home', [HomeController::class, 'index']);
 Route::get('/tickets', [TicketController::class, 'index']);
 Route::get('/order', [TicketController::class, 'openOrder']);
 Route::get('/attracties', [AttractieController::class, 'index']);
-Route::get('/attractieDetail', [AttractieDetailController::class, 'index']);
+Route::get('/attractie/{attractie}', [AttractieDetailController::class, 'index']);
 Route::get('/tijden', [HomeController::class, 'tijden']);
 Route::get('/contact', [HomeController::class, 'contact']);
 
