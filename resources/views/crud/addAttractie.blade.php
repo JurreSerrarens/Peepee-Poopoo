@@ -6,8 +6,6 @@
 
 
 @section('css')
-    <link href="{{ asset('../resources/css/home.css') }}" rel="stylesheet">
-    <link href="{{ asset('../resources/css/crud.css') }}" rel="stylesheet">
     @vite(['resources/css/home.css', 'resources/js/app.js', 'resources/js/crud.css'])
     <link
       rel="icon"
