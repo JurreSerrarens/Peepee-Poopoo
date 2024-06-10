@@ -17,50 +17,72 @@ class AttractieController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Display home page.
      */
-    public function create()
+    public function add(Request $request)
     {
-        //
-    }
+        $this->validate($request, [
+            'name' => 'required',
+            'description' => 'required',
+            'type' => 'required',
+            'image' => 'required'
+        ]);
+        
+        $attractie = new Attractie();
+        $attractie->name = $request->name;
+        $attractie->description = $request->description;
+        $attractie->type = $request->type;
+        $attractie->image = $request->image;
+        $attractie->save();
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
+        return redirect()->intended('/getAttracties');
     }
-
     /**
-     * Display the specified resource.
+     * Display home page.
      */
-    public function show(Attractie $attractie)
+    public function remove(Attractie $attractie)
     {
-        //
+        //$attractie = Attractie::find(1);
+        $attractie->delete();
+        return redirect()->intended('/getAttracties');
     }
-
     /**
-     * Show the form for editing the specified resource.
+     * Display home page.
      */
-    public function edit(Attractie $attractie)
+    public function get(Attractie $attractie)
     {
-        //
+        return View('crud.editAttractie', ['attractie' => $attractie]);
     }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Attractie $attractie)
+    public function new()
     {
-        //
+        return View('crud.addAttractie');
     }
-
     /**
-     * Remove the specified resource from storage.
+     * Display home page.
      */
-    public function destroy(Attractie $attractie)
+    public function getAll()
     {
-        //
+        $attracties = Attractie::all();
+        return View('crud.crudAttractie', ['attracties' => $attracties]);
+    }
+    /**
+     * Update existing attractie.
+     */
+    public function update(Attractie $attractie,Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required',
+            'description' => 'required',
+            'type' => 'required',
+            'image' => 'required'
+        ]);
+        //Add Data
+        $attractie->name = $request->name;
+        $attractie->description = $request->description;
+        $attractie->type = $request->type;
+        $attractie->image = $request->image;
+        $attractie->save();
+
+        return redirect()->intended('/getAttracties');
     }
 }

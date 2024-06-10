@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section("title")
-    Gamemode 1
+    /ban
 @endsection
 
 
@@ -14,13 +14,17 @@
 @endsection
 
 @section('content')
-    <h1 class="title">Welkom {{ Auth::user()->name }}</h1>
+    <h1 class="title">Accomodaties</h1>
     <hr>
     <!-- Introduction -->
     <div class="subContainer">
-        <a href="{{url('/getUsers')}}">Users</a><br><br><!-- users -->
-        <a href="{{url('/getAttracties')}}">Attracties</a><br><br><!-- attractions -->
-        <a href="#">Accomodaties</a><br><!-- accomodations -->
+        <p>
+        <a href="#">/ban</p><!-- users -->
+        <a href="#">/fill</p><!-- attractions -->
+        <a href="#">/setspawnpoint</p><!-- accomodations -->
+        <br>
+
+        <img alt="Christianity" src="https://media1.tenor.com/m/fvsDY-gIMYsAAAAd/minecraft-meme.gif">
         <br><br>
         <a href="{{url('logout')}}">Logout</a>
     </div>
