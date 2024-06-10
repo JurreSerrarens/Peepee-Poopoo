@@ -16,7 +16,7 @@
 @endsection
 
 @section('content')
-    <h1 class="title"><{{ Auth::user()->name }}> used /fill</h1>
+    <h1 class="title">Add Attractie</h1>
     <hr>
     <div class="subContainer">
         <!-- Introduction -->

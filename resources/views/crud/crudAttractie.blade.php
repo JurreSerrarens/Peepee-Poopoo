@@ -16,14 +16,13 @@
 @endsection
 
 @section('content')
-    <h1 class="title">{{ Auth::user()->name }} used  /fill</h1>
+    <h1 class="title">Attracties</h1>
     <hr>
     <!-- Introduction -->
     <div class="subContainer">
-        <h2>I am the mod son.</h2>
-        <a href="{{url('/getUsers')}}">/ban</a><br><!-- users -->
-        <a href="{{url('/getAttracties')}}">/fill</a><br><!-- attractions -->
-        <a href="#">/setspawnpoint</a><br><!-- accomodations -->
+        <a href="{{url('/getUsers')}}">Users</a><br><!-- users -->
+        <a href="{{url('/getAttracties')}}">Attracties</a><br><!-- attractions -->
+        <a href="#">Accomodaties</a><br><!-- accomodations -->
         <br>
         <h2>Attracties</h2>
         <hr>

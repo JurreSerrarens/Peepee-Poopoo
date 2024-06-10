@@ -16,7 +16,7 @@
 @endsection
 
 @section('content')
-    <h1 class="title">{{ Auth::user()->name }} used /ban User {{ $user->name }}</h1>
+    <h1 class="title">Edit User}</h1>
     <hr>
     <!-- Introduction -->
     <form class="ticketForm" action="{{url('/putUser')}}/{{ $user->id}}" method="post">

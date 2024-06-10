@@ -15,11 +15,10 @@
 @endsection
 
 @section('content')
-    <h1 class="title"><{{ Auth::user()->name }}> used /ban</h1>
+    <h1 class="title">Accomodaties</h1>
     <hr>
     <!-- Introduction -->
     <div class="subContainer">
-        <h2>I am the mod son.</h2>
         <p>
         <a href="#">/ban</p><!-- users -->
         <a href="#">/fill</p><!-- attractions -->

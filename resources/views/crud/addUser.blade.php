@@ -16,7 +16,7 @@
 @endsection
 
 @section('content')
-    <h1 class="title">{{ Auth::user()->name }} used /whitelist</h1>
+    <h1 class="title">Add User</h1>
     <hr>
     <!-- Introduction -->
     <form class="ticketForm" action="{{url('/addUser')}}" method="post">
