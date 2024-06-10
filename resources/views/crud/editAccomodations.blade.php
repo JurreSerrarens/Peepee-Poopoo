@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section("title")
-    Gamemode 1
+    /ban
 @endsection
 
 
@@ -15,18 +15,19 @@
 @endsection
 
 @section('content')
-    <h1 class="title">{{ Auth::user()->name }}'s gamemode was set to creative</h1>
+    <h1 class="title"><{{ Auth::user()->name }}> used /ban</h1>
     <hr>
     <!-- Introduction -->
     <div class="subContainer">
         <h2>I am the mod son.</h2>
-        <br>
-        <a href="{{url('/getUsers')}}">/ban</p><!-- users -->
-        <a href="{{url('/getAttracties')}}">/fill</p><!-- attractions -->
+        <p>
+        <a href="#">/ban</p><!-- users -->
+        <a href="#">/fill</p><!-- attractions -->
         <a href="#">/setspawnpoint</p><!-- accomodations -->
         <br>
-        <a href="{{url('logout')}}">Logout</a>
-        <br><br>
+
         <img alt="Christianity" src="https://media1.tenor.com/m/fvsDY-gIMYsAAAAd/minecraft-meme.gif">
+        <br><br>
+        <a href="{{url('logout')}}">Logout</a>
     </div>
 @endsection
