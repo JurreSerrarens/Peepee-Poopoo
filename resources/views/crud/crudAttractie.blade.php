@@ -10,7 +10,7 @@
     <link
       rel="icon"
       href="https://media.tenor.com/j6HNDMU_fF4AAAAM/cow-dancing.gif"
-    />/
+    />
 @endsection
 
 @section('content')
@@ -22,20 +22,23 @@
         <a href="{{url('/getAttracties')}}">Attracties</a><br><!-- attractions -->
         <a href="#">Accomodaties</a><br><!-- accomodations -->
         <br>
+    </div>
+    <div class="subContainer CrudCont">
         <h2>Attracties</h2>
-        <hr>
         <a href='newAttractie'>Add</a>
-        <div class="subContainer">
-            @foreach($attracties as $attractie)
-            <div class="CrudObject CrudCont">
-                <p>{{ $attractie->name }}</p>
+        <hr class="fullHr">
+        @foreach($attracties as $attractie)
+        <div class="CrudObject">
+            <p>{{ $attractie->name }}</p>
+            <div class="CrudOptions">
                 <a href='getAttractie/{{ $attractie->id}}'>Edit</a>
                 <a href="deleteAttractie/{{ $attractie->id}}" >Delete</a>
-            </div>
-            @endforeach
+            </div>  
         </div>
+        @endforeach
+        <hr class="fullHr">
 
-        <br><br>
+        <br>
         <a href="{{url('logout')}}">Logout</a>
     </div>
 @endsection

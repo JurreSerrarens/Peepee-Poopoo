@@ -1,10 +1,24 @@
 .CrudCont{
-    width: 50%;
+    width: 40%;
 }
 .CrudObject
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
+    margin: 0;
+    
+}
+.CrudObject p{
+    text-align: left;
+    margin: 0;
+
+}
+.CrudOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0;
 }
