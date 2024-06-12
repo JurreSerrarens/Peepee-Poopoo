@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\AttractieController;
 use App\Http\Controllers\AttractieDetailController;
+use App\Http\Controllers\AccomodationController;
+use App\Http\Controllers\AccomodationDetailController;
 use App\Http\Controllers\BestellingController;
 use App\Http\Controllers\ContactController;
 
@@ -30,6 +32,8 @@ Route::get('/tickets', [TicketController::class, 'index']);
 Route::get('/order', [TicketController::class, 'openOrder']);
 Route::get('/attracties', [AttractieController::class, 'index']);
 Route::get('/attractie/{attractie}', [AttractieDetailController::class, 'index']);
+Route::get('/accomodations', [AccomodationController::class, 'index']);
+Route::get('/accomodation/{accomodation}', [AccomodationDetailController::class, 'index']);
 Route::get('/tijden', [HomeController::class, 'tijden']);
 Route::get('/contact', [HomeController::class, 'contact']);
 

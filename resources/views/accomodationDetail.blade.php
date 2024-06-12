@@ -14,8 +14,8 @@
 
 @section("content")
         <div class="attractieDetail">
-                <img class="image"alt="attractie image"  src="{{$attractie->image}}">
-                <h2>{{ $attractie->name }}</h2>
-                <div class="info"><p> {{ $attractie->description}}</p></div>
+                <img class="image"alt="attractie image"  src="{{$accomodation->image}}">
+                <h2>{{ $accomodation->name }}</h2>
+                <div class="info"><p> {{ $accomodation->description}}</p></div>
         </div>
 @endsection

@@ -13,17 +13,17 @@
 @endsection
 
 @section("content")
-    <h1 class="title">Attracties</h1>
+    <h1 class="title">Accomodaties</h1>
     <hr>
     <!-- Introduction -->
     <div class="attractieContainer">
-    @foreach($attracties as $attractie)
+    @foreach( $accomodations as  $accomodation)
         <div class="subContainer">
-            <img class="image" src="{{$attractie->image}}">
-            <h2>{{ $attractie->name }}</h2>
-            <h3>{{ $attractie->type}}</h3>
-            <p> {{ $attractie->description}}</p>
-            <td><a href="attractie/{{ $attractie->id }}" class="btn btn-info">View</a></td>
+            <img class="image" src="{{ $accomodation->image}}">
+            <h2>{{  $accomodation->name }}</h2>
+            <h3>{{  $accomodation->type}}</h3>
+            <p> {{  $accomodation->description}}</p>
+            <td><a href="accomodation/{{  $accomodation->id }}" class="btn btn-info">View</a></td>
         </div>
         @endforeach
     </div>
