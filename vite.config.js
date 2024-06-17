@@ -6,7 +6,7 @@ export default defineConfig({
         laravel({
             input: ['resources/css/app.css' , 'resources/css/layout.css' , 'resources/css/attaractie.css' , 
             'resources/css/attaractieDetail.css', 'resources/css/confirmation.css', 'resources/css/contact.css', 
-            'resources/css/home.css', 'resources/css/order.css', 'resources/css/test.css' , 'resources/js/app.js'],
+            'resources/css/home.css', 'resources/css/order.css', 'resources/css/test.css' , 'resources/css/crud.css'],
             refresh: true,
         }),
     ],

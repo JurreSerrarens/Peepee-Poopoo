@@ -25,6 +25,11 @@
             <a class="menuItem" href="{{url('accomodations')}}">Accomodaties</a>
             <a class="menuItem" href="{{url('contact')}}">Contact</a>
         </div>
+        @if (!Auth::guest())
+            <a class="loginButt" href="{{url('dashboard')}}">HELLO MY NAME IS GHOST JOHNSON</a>
+        @else
+            <a class="loginButt" href="{{url('login')}}">Login you fat fuck</a>
+        @endif
     </div>
 
     <!-- Main Content -->
