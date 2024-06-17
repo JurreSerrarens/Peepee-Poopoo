@@ -1,9 +1,7 @@
 @extends('layout')
 
 @section('css')
-    <link href="{{ asset('../resources/css/home.css') }}" rel="stylesheet">
-    <link href="{{ asset('../resources/css/contact.css') }}" rel="stylesheet">
-        @vite(['resources/css/contact.css', 'resources/js/app.js'])
+        @vite(['resources/css/contact.css', '../resources/css/home.css', '../resources/css/contact.css', 'resources/js/app.js'])
     <link
       rel="icon"
       href="https://media.tenor.com/j6HNDMU_fF4AAAAM/cow-dancing.gif"

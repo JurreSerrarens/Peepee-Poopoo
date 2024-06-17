@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\AttractieDetail;
+use App\Models\Attractie;
 use Illuminate\Http\Request;
 
 class AttractieDetailController extends Controller
@@ -10,9 +11,9 @@ class AttractieDetailController extends Controller
     /**
      * Display index page.
      */
-    public function index()
+    public function index(Attractie $attractie)
     {
-        return view('attractieDetail');
+        return view('attractieDetail', ['attractie' => $attractie]);
     }
 
     /**

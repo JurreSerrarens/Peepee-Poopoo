@@ -2,20 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\test;
+use App\Models\Accomodation;
 use Illuminate\Http\Request;
-use Illuminate\View\View;
- 
-// Route::get('/test', [TestController::class, 'show']);
 
-class TestController extends Controller
+class AccomodationController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return View('test');
+        $accomodations = Accomodation::all();
+        return view('accomodations', ['accomodations' => $accomodations]);
     }
 
     /**
@@ -37,15 +35,15 @@ class TestController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(/*test $test*/)
+    public function show(accomodation $accomodation)
     {
-        return View('test');
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(test $test)
+    public function edit(accomodation $accomodation)
     {
         //
     }
@@ -53,7 +51,7 @@ class TestController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, test $test)
+    public function update(Request $request, accomodation $accomodation)
     {
         //
     }
@@ -61,7 +59,7 @@ class TestController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(test $test)
+    public function destroy(accomodation $accomodation)
     {
         //
     }
