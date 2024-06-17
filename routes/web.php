@@ -50,6 +50,14 @@ Route::middleware('auth')->group(function () {
     Route::post('/putAttractie/{attractie}', [AttractieController::class, 'update']);
     Route::get('/deleteAttractie/{attractie}', [AttractieController::class, 'remove']);
 
+    //Accomodations
+    Route::get('/getAccomodation/{accomodation}', [AccomodationController::Class, 'get']);
+    Route::get('/getAccomodations', [AccomodationController::Class, 'getAll']);
+    Route::get('/newAccomodation', [AccomodationController::Class, 'new']);
+    Route::post('/addAccomodation', [AccomodationController::Class, 'add']);
+    Route::post('/putAccomodation/{accomodation}', [AccomodationController::class, 'update']);
+    Route::get('/deleteAccomodation/{accomodation}', [AccomodationController::class, 'remove']);
+
 });
  
 // Auth routes
