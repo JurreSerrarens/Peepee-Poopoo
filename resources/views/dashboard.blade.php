@@ -20,7 +20,7 @@
     <div class="subContainer">
         <a href="{{url('/getUsers')}}">Users</a><br><br><!-- users -->
         <a href="{{url('/getAttracties')}}">Attracties</a><br><br><!-- attractions -->
-        <a href="#">Accomodaties</a><br><!-- accomodations -->
+        <a href="{{url('/getAccomodations')}}">Accomodaties</a><br><!-- accomodations -->
         <br><br>
         <a href="{{url('logout')}}">Logout</a>
     </div>

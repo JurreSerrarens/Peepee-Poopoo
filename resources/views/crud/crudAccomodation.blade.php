@@ -14,23 +14,23 @@
 @endsection
 
 @section('content')
-    <h1 class="title">Attracties</h1>
+    <h1 class="title">Accomodations</h1>
     <hr>
     <!-- Introduction -->
     <div class="subContainer">
         <a href="{{url('/getUsers')}}">Users</a><br><!-- users -->
-        <a href="{{url('/getAttracties')}}">Attracties</a><br><!-- attractions -->
+        <a href="{{url('/getAttracties')}}">Accomodations</a><br><!-- attractions -->
         <a href="{{url('/getAccomodations')}}">Accomodaties</a><br><!-- accomodations -->
         <br>
-        <h2>Attracties</h2>
+        <h2>Accomodations</h2>
         <hr>
-        <a href='newAttractie'>Add</a>
+        <a href='newAccomodation'>Add</a>
         <div class="subContainer">
-            @foreach($attracties as $attractie)
+            @foreach($accomodations as $accomodation)
             <div class="CrudObject CrudCont">
-                <p>{{ $attractie->name }}</p>
-                <a href='getAttractie/{{ $attractie->id}}'>Edit</a>
-                <a href="deleteAttractie/{{ $attractie->id}}" >Delete</a>
+                <p>{{ $accomodation->name }}</p>
+                <a href='getAccomodation/{{ $accomodation->id}}'>Edit</a>
+                <a href="deleteAccomodation/{{ $accomodation->id}}" >Delete</a>
             </div>
             @endforeach
         </div>

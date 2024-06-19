@@ -16,51 +16,77 @@ class AccomodationController extends Controller
         return view('accomodations', ['accomodations' => $accomodations]);
     }
 
-    /**
-     * Show the form for creating a new resource.
+        /**
+     * Display home page.
      */
-    public function create()
+    public function add(Request $request)
     {
-        //
-    }
+        $this->validate($request, [
+            'name' => 'required',
+            'price' => 'required|decimal:2',
+            'people' => 'required|integer',
+            'description' => 'required',
+            'image' => 'required'
+        ]);
+        
+        $accomodation = new Accomodation();
+        $accomodation->name = $request->name;
+        $accomodation->description = $request->description;
+        $accomodation->price = $request->price;
+        $accomodation->people = $request->people;
+        $accomodation->image = $request->image;
+        $accomodation->save();
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
+        return redirect()->intended('/getAccomodations');
     }
-
     /**
-     * Display the specified resource.
+     * Display home page.
      */
-    public function show(accomodation $accomodation)
+    public function remove(Accomodation $accomodation)
     {
-        //
+        //$accomodation = Accomodation::find(1);
+        $accomodation->delete();
+        return redirect()->intended('/getAccomodations');
     }
-
     /**
-     * Show the form for editing the specified resource.
+     * Display home page.
      */
-    public function edit(accomodation $accomodation)
+    public function get(Accomodation $accomodation)
     {
-        //
+        return View('crud.editAccomodation', ['accomodation' => $accomodation]);
     }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, accomodation $accomodation)
+    public function new()
     {
-        //
+        return View('crud.addAccomodation');
     }
-
     /**
-     * Remove the specified resource from storage.
+     * Display home page.
      */
-    public function destroy(accomodation $accomodation)
+    public function getAll()
     {
-        //
+        $accomodations = Accomodation::all();
+        return View('crud.crudAccomodation', ['accomodations' => $accomodations]);
+    }
+    /**
+     * Update existing accomodation.
+     */
+    public function update(Accomodation $accomodation,Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required',
+            'description' => 'required',
+            'price' => 'required|decimal:2',
+            'people' => 'required|integer',
+            'image' => 'required'
+        ]);
+        //Add Data
+        $accomodation->name = $request->name;
+        $accomodation->description = $request->description;
+        $accomodation->price = $request->price;
+        $accomodation->people = $request->people;
+        $accomodation->image = $request->image;
+        $accomodation->save();
+
+        return redirect()->intended('/getAccomodations');
     }
 }
