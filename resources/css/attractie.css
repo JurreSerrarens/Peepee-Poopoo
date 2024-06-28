@@ -41,3 +41,10 @@
     width: 295px;
     height: 295px;
 }
+
+.formContainer{
+    margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
+    padding-bottom: 75px;
+}
