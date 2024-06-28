@@ -10,7 +10,7 @@
     <link
       rel="icon"
       href="https://media.tenor.com/j6HNDMU_fF4AAAAM/cow-dancing.gif"
-    />/
+    />
 @endsection
 
 @section('content')
@@ -49,7 +49,7 @@
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
             <div class="formCont">
-                <input name="submit" type="submit" value="bestellen">
+                <input name="submit" type="submit" value="Submit">
             </div> 
         </form>
     </div>  

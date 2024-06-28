@@ -43,7 +43,7 @@
             @enderror
             <div class="formCont">
                 <label for="price">Price</label>
-                <input name="price" type="number" placeholder="{{$accomodation->price}}" value="{{$accomodation->price}}">
+                <input name="price" type="number" step=".01" placeholder="{{$accomodation->price}}" value="{{$accomodation->price}}">
             </div>
             @error('price')
                 <div class="alert alert-danger">{{ $message }}</div>
@@ -56,7 +56,7 @@
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
             <div class="formCont">
-                <input name="submit" type="submit" value="bestellen">
+                <input name="submit" type="submit" value="Submit">
             </div> 
         </form>
     </div>  
