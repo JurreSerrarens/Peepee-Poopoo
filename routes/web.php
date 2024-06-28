@@ -9,6 +9,7 @@ use App\Http\Controllers\AttractieDetailController;
 use App\Http\Controllers\AccomodationController;
 use App\Http\Controllers\AccomodationDetailController;
 use App\Http\Controllers\BestellingController;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
@@ -76,4 +77,5 @@ Route::get('/contact', [HomeController::class, 'contact']);
 
 //Post
 Route::post('/postOrder', [BestellingController::class, 'postOrder']);
+Route::post('/postBooking', [BookingController::class, 'postBooking']);
 Route::post('/postContact', [ContactController::class, 'postContact']);
