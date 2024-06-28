@@ -10,7 +10,7 @@
     <link
       rel="icon"
       href="https://media.tenor.com/j6HNDMU_fF4AAAAM/cow-dancing.gif"
-    />/
+    />
 @endsection
 
 @section('content')

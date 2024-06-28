@@ -10,7 +10,7 @@
     <link
       rel="icon"
       href="https://media.tenor.com/j6HNDMU_fF4AAAAM/cow-dancing.gif"
-    />/
+    />
 @endsection
 
 @section('content')
@@ -19,7 +19,7 @@
     <!-- Introduction -->
     <div class="subContainer">
         <a href="{{url('/getUsers')}}">Users</a><br><!-- users -->
-        <a href="{{url('/getAttracties')}}">Accomodations</a><br><!-- attractions -->
+        <a href="{{url('/getAttracties')}}">Attracties</a><br><!-- attractions -->
         <a href="{{url('/getAccomodations')}}">Accomodaties</a><br><!-- accomodations -->
         <br>
         <h2>Accomodations</h2>
