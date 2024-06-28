@@ -10,7 +10,7 @@
     <link
       rel="icon"
       href="https://media.tenor.com/j6HNDMU_fF4AAAAM/cow-dancing.gif"
-    />/
+    />
 @endsection
 
 @section('content')
@@ -43,7 +43,7 @@
             @enderror
             <div class="formCont">
                 <label for="price">Price</label>
-                <input name="price" type="number">
+                <input name="price" type="number" step=".01">
             </div>
             @error('price')
                 <div class="alert alert-danger">{{ $message }}</div>
@@ -56,7 +56,7 @@
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
             <div class="formCont">
-                <input name="submit" type="submit" value="bestellen">
+                <input name="submit" type="submit" value="Submit">
             </div> 
         </form>
     </div>  
